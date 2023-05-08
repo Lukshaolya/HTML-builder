@@ -19,7 +19,7 @@ async function getInfo() {
   
   async function collectStyles() {
     let bundleFile = path.join(__dirname, 'project-dist', 'bundle.css');
-    const promise = fs.promises.writeFile(bundleFile, res,(err)=>{
+    const promise = fs.promises.writeFile(bundleFile, result,(err)=>{
         if (err) {
             throw err;
           }
