@@ -14,7 +14,7 @@ files.forEach(file => {
       }
 
       if (stats.isFile()) {
-        console.log(`${file} - ${path.extname(file).substring(1)} - ${stats.size}`);
+        console.log(`${file} - ${path.extname(file).substring(1)} - ${stats.size/1000}kb`);
       }
     });
   });
