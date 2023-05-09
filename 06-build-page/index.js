@@ -27,7 +27,7 @@ async function getInfo() {
   
   async function createFolder() {
     let projectFile = path.join(__dirname, 'project-dist');
-    const promise = fs.promises.mkdir(projectFile,(err)=>{
+    const promise = fs.promises.mkdir(projectFile,{recursive:true},(err)=>{
         if (err) {
             throw err;
           }
